@@ -1,0 +1,11 @@
+<h1>Historial del navegador</h1>
+
+@if (currentPage) {
+  <div>
+    <h2>{{ currentPage.title }}</h2>
+    <p>{{ currentPage.url }}</p>
+
+    <button (click)="goBack()">← Atrás</button>
+    <button (click)="goForward()">Adelante →</button>
+  </div>
+}

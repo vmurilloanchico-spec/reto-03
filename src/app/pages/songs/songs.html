@@ -1,0 +1,10 @@
+<h1>Reproductor de canciones</h1>
+
+@if (currentSong) {
+  <div>
+    <h2>{{ currentSong.title }}</h2>
+    <p>{{ currentSong.artist }}</p>
+
+    <button (click)="nextSong()">Siguiente canción</button>
+  </div>
+}
